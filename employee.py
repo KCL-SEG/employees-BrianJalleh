@@ -36,7 +36,7 @@ class Employee:
         
         if(self.commissionType == None):
         
-            if(self.contractType == "contract"):
+            if(self.contractType == "monthly"):
     
                 return f"{self.name} works on a {self.contractType} salary of {self.salary}. Their total pay is {self.get_pay()}."
             
@@ -77,11 +77,3 @@ robbie = Employee('Robbie', contractType = "monthly", salary = 2000, commissionT
 
 # Ariel works on a contract of 120 hours at 30/hour and receives a bonus commission of 600.  Their total pay is 4200.
 ariel = Employee('Ariel', contractType = "hourly", salary = 30, hoursWorked = 120, commissionType= "bonus", commission = 600)
-
-print(str(billie))
-print(str(charlie))
-print(str(renee))
-print(str(jan))
-print(str(robbie))
-print(str(ariel))
-
