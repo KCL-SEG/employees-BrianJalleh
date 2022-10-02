@@ -38,24 +38,24 @@ class Employee:
         
             if(self.contractType == "monthly"):
     
-                return f"{self.name} works on a {self.contractType} salary of {self.salary}. Their total pay is {self.get_pay()}."
+                return f"{self.name} works on a {self.contractType} salary of {self.salary}.  Their total pay is {self.get_pay()}."
             
             else:
-                return f"{self.name} works on a contract of {self.hoursWorked} hours at {self.salary}/hour. Their total pay is {self.get_pay()}."
+                return f"{self.name} works on a contract of {self.hoursWorked} hours at {self.salary}/hour.  Their total pay is {self.get_pay()}."
 
 
         elif(self.commissionType == "contract"):
             
             if(self.contractType == "monthly"):
-                return f"{self.name} works on a monthly salary of {self.salary} and receives a commission for {self.numberOfContracts} contract(s) at {self.commission}/contract. Their total pay is {self.get_pay()}."
+                return f"{self.name} works on a monthly salary of {self.salary} and receives a commission for {self.numberOfContracts} contract(s) at {self.commission}/contract.  Their total pay is {self.get_pay()}."
             else:
-                return f"{self.name} works on a contract of {self.hoursWorked} hours at {self.salary}/hour and receives a commission for {self.numberOfContracts} contract(s) at {self.commission}/contract. Their total pay is {self.get_pay()}."
+                return f"{self.name} works on a contract of {self.hoursWorked} hours at {self.salary}/hour and receives a commission for {self.numberOfContracts} contract(s) at {self.commission}/contract.  Their total pay is {self.get_pay()}."
         
         else:
             if(self.contractType == "monthly"):
-                return f"{self.name} works on a monthly salary of {self.salary} and receives a bonus commission of {self.commission}. Their total pay is {self.get_pay()}."
+                return f"{self.name} works on a monthly salary of {self.salary} and receives a bonus commission of {self.commission}.  Their total pay is {self.get_pay()}."
             else:
-                return f"{self.name} works on a contract of {self.hoursWorked} hours at {self.salary}/hour and receives a bonus commission of {self.commission}. Their total pay is {self.get_pay()}."
+                return f"{self.name} works on a contract of {self.hoursWorked} hours at {self.salary}/hour and receives a bonus commission of {self.commission}.  Their total pay is {self.get_pay()}."
             
         
 
